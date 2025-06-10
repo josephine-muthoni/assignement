@@ -773,23 +773,24 @@ body {
     max-width: 1100px;
     width: 100%;
     margin: 0 auto 48px auto;
-    padding: 40px 0 32px 0;         /* Remove side padding */
+    padding: 0; /* Remove all padding here */
     display: flex;
     gap: 40px;
-    justify-content: stretch;       /* Stretch children to fill */
+    justify-content: stretch;
     align-items: stretch;
     box-sizing: border-box;
 }
 
 .contact-details,
 .contact-form-area {
-    flex: 1 1 0;
-    min-width: 0;
+    flex: 1 1 340px;
+    min-width: 260px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 32px;                /* Add inner padding for content */
+    padding: 36px 32px 24px 32px; /* Match footer cards' padding */
+    box-sizing: border-box;
 }
 
 .contact-details h3 {
