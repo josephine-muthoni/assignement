@@ -778,7 +778,6 @@ body {
     gap: 48px;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
     box-sizing: border-box;
 }
 
