@@ -756,7 +756,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-header {
@@ -765,42 +766,20 @@ body {
     margin-bottom: 32px;
 }
 
-.contact-subtitle {
-    display: block;
-    color: #18403c;
-    font-size: 0.92rem;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    margin-bottom: 14px;
-}
-
-.contact-header h2 {
-    color: #18403c;
-    font-size: 2.3rem;
-    font-weight: bold;
-    margin-bottom: 14px;
-    line-height: 1.15;
-}
-
-.contact-header p {
-    color: #3a4a4a;
-    font-size: 1.08rem;
-    margin-bottom: 0;
-}
-
 .contact-main-card {
     background: #fff;
-    border-radius: 32px;
+    border-radius: 24px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
     max-width: 1100px;
     width: 100%;
     margin: 0 auto 48px auto;
-    padding: 48px 40px 40px 40px;
+    padding: 40px 32px 32px 32px;
     display: flex;
     gap: 48px;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .contact-details {
@@ -855,7 +834,7 @@ body {
     flex: 1 1 340px;
     max-width: 420px;
     background: #fcf6f0;
-    border-radius: 28px;
+    border-radius: 18px;
     padding: 32px 28px;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
     margin-left: auto;
@@ -900,7 +879,7 @@ body {
 }
 
 .contact-form-area button[type="submit"] {
-    background: #00332e;
+    background: #18403c;
     color: #fff;
     border: none;
     border-radius: 22px;
@@ -916,14 +895,13 @@ body {
     background: #14504a;
 }
 
-/* Responsive */
+/* Responsive: stack on small screens */
 @media (max-width: 1100px) {
     .contact-main-card {
         flex-direction: column;
         gap: 32px;
         padding: 32px 4vw 24px 4vw;
     }
-
     .contact-details,
     .contact-form-area {
         max-width: 100%;
