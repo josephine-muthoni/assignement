@@ -770,8 +770,8 @@ body {
     background: #fff;
     border-radius: 24px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-    max-width: 1100px;
-    width: 100%;
+    max-width: 1100px;    /* Ensure same as .footer-content-wrapper */
+    width: 100%;          /* Ensure same as .footer-content-wrapper */
     margin: 0 auto 48px auto;
     padding: 40px 32px 32px 32px;
     display: flex;
