@@ -300,6 +300,7 @@ body {
 /* Responsive: keep stacking on small screens */
 @media (max-width: 800px) {
     .about{
+        display:flex
         flex-direction: column;
         height: auto;
         text-align:start;
@@ -499,8 +500,8 @@ body {
 .testimonials-label {
     display: block;
     color: #18403c;
-    font-size: 0.92rem;
-    letter-spacing: 1.5px;
+    font-size: 0.72rem;
+    letter-spacing: 0.5px;
     font-weight: 600;
     margin-bottom: 14px;
 }
