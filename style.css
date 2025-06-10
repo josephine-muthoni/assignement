@@ -1529,3 +1529,132 @@ body {
         text-align: center;
     }
 }
+
+/* Combined Footer Section */
+.combined-footer-section {
+    background: #f7f7f7;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 0;
+    gap: 40px;
+}
+
+.footer-left-card {
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    padding: 36px 32px 24px 32px;
+    flex: 1 1 340px;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-left-card h2 {
+    color: #18403c;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+.footer-links-columns {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 18px;
+}
+
+.footer-links-columns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-columns li {
+    margin-bottom: 8px;
+}
+
+.footer-links-columns a {
+    color: #18403c;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.footer-links-columns a:hover {
+    color: #ff9800;
+}
+
+.copyright {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    margin-top: 24px;
+}
+
+.footer-right-card {
+    background: #00332e;
+    border-radius: 28px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    padding: 36px 32px 24px 32px;
+    flex: 1 1 340px;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-right-card h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+.footer-cta-btn {
+    background: #fff;
+    color: #00332e;
+    border: none;
+    border-radius: 24px;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.footer-cta-btn:hover {
+    background: #ff9800;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .footer-content-wrapper {
+        flex-direction: column;
+        gap: 24px;
+        padding: 32px 8vw 18px 8vw;
+    }
+    .footer-left-card, .footer-right-card {
+        width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+    }
+    .footer-right-card {
+        align-items: center;
+        text-align: center;
+    }
+}
