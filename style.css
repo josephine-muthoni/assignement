@@ -1417,116 +1417,144 @@ body {
     }
 }   
 
-/* Footer Layout: nav on the side, social media on the other */
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 24px 0;
-    gap: 40px;
+/* --- Combined Footer Section --- */
+.combined-footer-section {
+    width: 100%;
+    background: #222; /* or your footer bg */
+    padding: 0;
 }
 
-.footer-nav {
-    background: none;
-    color: #fff;
-    padding: 0;
-    margin: 0;
-    min-width: 180px;
+.footer-content-wrapper {
+    display: flex;
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 0 48px 0;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.footer-card-inner {
+    flex: 1 1 0;
+    border-radius: 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 0;
+    min-height: 280px;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.footer-left-card {
+    background: #fff;
+    color: #18403c;
+    align-items: flex-start;
+}
+
+.footer-left-card h2 {
+    color: #18403c;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    font-weight: bold;
 }
 
 .footer-nav ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 18px;
-    justify-content: center;
+    gap: 18px 32px;
     list-style: none;
-    margin: 12px 0 0 0;
+    margin: 0 0 18px 0;
     padding: 0;
 }
 
 .footer-nav a {
-    color: #ff9800;
-    text-decoration: none;
-    font-weight: 600;
+    color: #18403c;
+    font-weight: 500;
+    font-size: 1rem;
     transition: color 0.2s;
 }
 
 .footer-nav a:hover {
-    color: #e65100;
-    text-decoration: underline;
+    color: #007bff;
 }
 
-/* Social media icons in footer */
-.social-media {
+.terms-privacy {
     display: flex;
-    gap: 12px;
-    list-style: none;
-    justify-content: center;
-    padding: 0;
-    margin: 0 auto;
+    gap: 18px;
+    margin: 18px 0 0 0;
+    font-size: 0.95rem;
 }
 
-.social-media li {
-    display: inline-block;
-}
-
-.social-media .social-icon {
-    width: 32px;
-    max-width: 100%S;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    filter: grayscale(100%);
+.terms-privacy a {
+    color: #18403c;
     opacity: 0.7;
-    transition: filter 0.2s, opacity 0.2s, transform 0.2s;
-    vertical-align: middle;
+    transition: color 0.2s;
 }
 
-.social-media a:hover .social-icon {
-    filter: grayscale(0%);
-    opacity: 1;
-    transform: scale(1.1) rotate(-8deg);
+.terms-privacy a:hover {
+    color: #007bff;
 }
+
+.copyright {
+    color: #b0b0b0;
+    font-size: 0.93rem;
+    margin-top: 24px;
+}
+
+.footer-right-card {
+    background: #07343d;
+    color: #fff;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-right-card h2 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.footer-cta-graphic {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-cta-btn {
+    background: #fff;
+    color: #07343d;
+    border-radius: 24px;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    margin-top: 24px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.footer-cta-btn:hover {
+    background: #007bff;
+    color: #fff;
+}
+
 @media (max-width: 900px) {
-    .footer-content {
+    .footer-content-wrapper {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        gap: 24px;
+        padding: 32px 0;
+        max-width: 98vw;
     }
-    .footer-nav {
-        margin-bottom: 20px;
-        min-width: 0;
-    }
-
-    .footer-nav {
-        margin-bottom: 20px;
-    }
-
-    .social-media {
-        justify-content: center;
-        margin-top: 12px;
-    }
-}
-
-@media (max-width: 700px) {
-    .hero {
-        width: 98vw;
-        min-height: 40vh;
-        padding: 18px 4vw;
-        border-radius: 12px;
-        margin: 12px auto 40px auto;
-        background-size: cover;
-        background-position: center;
-    }
-    .hero-content h1 {
-        font-size: 1.4rem;
-        text-align: center;
-    }
-    .hero-content p {
-        font-size: 1rem;
-        padding-left: 0;
-        text-align: center;
+    .footer-card_inner {
+        max-width: 100%;
+        min-height: 220px;
+        padding: 32px 16px;
     }
 }
