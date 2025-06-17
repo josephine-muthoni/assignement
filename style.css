@@ -213,102 +213,143 @@ body {
     color: #fff;
 }
 
-/* About Section */
-.about {
-    width: 60%;
-    height: 70vh;
-    place-items: center;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-inline: auto;
-
-}
-
-.about-img {
+/* --- About Section Modern Card --- */
+.about-section {
+    background: #f8f9f7;
+    padding: 0; /* Remove extra vertical padding */
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 150%;
-    margin-inline: auto;
+    align-items: stretch; /* Stretch children to fill height */
+    min-height: 600px; /* Set desired minimum height for the section */
 }
 
-.about-img img {
+.about-card {
+    display: flex;
+    align-items: stretch; /* Stretch content and illustration to fill height */
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 36px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+    padding: 56px 56px 56px 56px;
+    max-width: 1000px;
     width: 100%;
-    max-width: 500px;
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-    margin-inline: auto;
+    margin: 40px auto; /* Add some vertical margin for separation */
+    gap: 48px;
+    min-height: 520px; /* Increase as needed */
+    height: 100%;
 }
 
-.about-card-content {
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
+.about-content,
+.about-illustration {
+    flex: 1 1 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.about-card-content h2 {
-    text-align: start;
-    font-size: 1.5rem;
-    color: #ff9800;
-    margin-bottom: 12px;
-
+.about-content {
+    max-width: 420px;
+    text-align: left;
+    align-items: flex-start;
 }
 
-.about-card-content span {
+.about-illustration img {
+    max-width: 340px;
+    width: 100%;
+    border-radius: 32px;
     display: block;
-    margin-bottom: 10px;
-    color: #555;
-    text-align: start;
+    background: #07343d;
+    object-fit: cover;
+    padding: 32px;
+    box-sizing: border-box;
+    height: 100%; /* Make the image fill the available height */
+    min-height: 200px;
 }
 
-.about-card-content p {
-    margin-bottom: 20px;
-    color: #333;
-    text-align: start;
+.about-label {
+    color: #6a6a6a;
+    font-size: 0.92rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+    font-weight: 600;
+    display: block;
+    text-transform: uppercase;
 }
 
-.btn-wrapper {
-    display: flex;
-    justify-content: start;
-    margin-top: 20px;
+.about-title {
+    color: #18403c;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    line-height: 1.1;
 }
 
-.btn-wrapper button {
-    background: #ff9800;
+.about-desc {
+    color: #3a4a4a;
+    font-size: 1.08rem;
+    margin-bottom: 28px;
+}
+
+.about-btn {
+    background: #07343d;
     color: #fff;
     border: none;
-    padding: 12px 28px;
     border-radius: 24px;
+    padding: 14px 32px;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.2s;
-
-
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.btn-wrapper button:hover {
-    background: #e65100;
+.about-btn:hover {
+    background: #007b7b;
 }
 
-/* Responsive: keep stacking on small screens */
-@media (max-width: 800px) {
-    .about{
-        display:flex
+.about-illustration {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.about-illustration img {
+    max-width: 340px;
+    width: 100%;
+    border-radius: 32px;
+    display: block;
+    background: #07343d;
+    object-fit: contain;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .about-card {
         flex-direction: column;
-        height: auto;
-        text-align:start;
-        justify-content:left;
+        align-items: center;
+        padding: 32px 16px;
+        gap: 24px;
+        min-height: unset;
     }
-    .about-img {
+    .about-illustration {
         width: 100%;
-        margin-inline: auto;
+        justify-content: center;
+        margin-top: 18px;
+    }
+    .about-illustration img {
+        max-width: 220px;
+        border-radius: 24px;
+        padding: 18px;
+    }
+    .about-content {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
     }
 }
 
