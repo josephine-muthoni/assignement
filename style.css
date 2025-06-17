@@ -230,7 +230,7 @@ body {
     background: #fff;
     border-radius: 36px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
-    padding: 56px 56px 56px 56px;
+    padding: 56px;
     max-width: 1000px;
     width: 100%;
     margin: 40px auto; /* Add some vertical margin for separation */
@@ -255,13 +255,21 @@ body {
     align-items: flex-start;
 }
 
+.about-illustration {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 .about-illustration img {
     max-width: 340px;
     width: 100%;
     border-radius: 32px;
     display: block;
     background: #07343d;
-    object-fit: cover;
+    object-fit: contain; /* Changed from cover to contain to ensure the entire image is visible */
     padding: 32px;
     box-sizing: border-box;
     height: 100%; /* Make the image fill the available height */
@@ -307,25 +315,6 @@ body {
 
 .about-btn:hover {
     background: #007b7b;
-}
-
-.about-illustration {
-    flex: 1 1 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.about-illustration img {
-    max-width: 340px;
-    width: 100%;
-    border-radius: 32px;
-    display: block;
-    background: #07343d;
-    object-fit: contain;
-    padding: 32px;
-    box-sizing: border-box;
 }
 
 @media (max-width: 900px) {
