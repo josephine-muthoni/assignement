@@ -213,135 +213,134 @@ body {
     color: #fff;
 }
 
-/* --- About Section Modern Card --- */
-.about-section {
-    background: #f8f9f7;
-    padding: 0; /* Remove extra vertical padding */
-    display: flex;
-    justify-content: center;
-    align-items: stretch; /* Stretch children to fill height */
-    min-height: 600px; /* Set desired minimum height for the section */
-}
+/* --- About Section Modern Card (Styled to match Mental Health Theme) --- */
+        .about-section {
+            background: #f8f9f7; /* Light beige/off-white background from mental health theme */
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            min-height: 600px;
+        }
 
-.about-card {
-    display: flex;
-    align-items: stretch; /* Stretch content and illustration to fill height */
-    justify-content: space-between;
-    background: #fff;
-    border-radius: 36px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
-    padding: 56px;
-    max-width: 1000px;
-    width: 100%;
-    margin: 40px auto; /* Add some vertical margin for separation */
-    gap: 48px;
-    min-height: 520px; /* Increase as needed */
-    height: 100%;
-}
+        .about-card {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            background: #fff; /* White card background */
+            border-radius: 36px; /* Rounded corners from mental health theme */
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07); /* Subtle shadow */
+            padding: 56px;
+            max-width: 1000px;
+            width: 100%;
+            margin: 40px auto;
+            gap: 48px;
+            min-height: 520px;
+            height: 100%;
+        }
 
-.about-content,
-.about-illustration {
-    flex: 1 1 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
+        .about-content,
+        .about-illustration {
+            flex: 1 1 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
 
-.about-content {
-    max-width: 420px;
-    text-align: left;
-    align-items: flex-start;
-}
+        .about-content {
+            max-width: 420px;
+            text-align: left;
+            align-items: flex-start;
+        }
 
-.about-illustration {
-    flex: 1 1 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
+        .about-illustration {
+            flex: 1 1 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
 
-.about-illustration img {
-    max-width: 340px;
-    width: 100%;
-    border-radius: 32px;
-    display: block;
-    background: #07343d;
-    object-fit: contain; /* Changed from cover to contain to ensure the entire image is visible */
-    padding: 32px;
-    box-sizing: border-box;
-    height: 100%; /* Make the image fill the available height */
-    min-height: 200px;
-}
+        .about-illustration img {
+            max-width: 340px;
+            width: 100%;
+            border-radius: 32px; /* Rounded corners for the image container from mental health theme */
+            display: block;
+            background: #07343d; /* Dark background color from mental health theme */
+            object-fit: contain; /* To ensure the full racing car image is visible */
+            padding: 32px; /* Padding inside the dark background from mental health theme */
+            box-sizing: border-box;
+            height: 100%;
+            min-height: 200px;
+        }
 
-.about-label {
-    color: #6a6a6a;
-    font-size: 0.92rem;
-    letter-spacing: 1.5px;
-    margin-bottom: 18px;
-    font-weight: 600;
-    display: block;
-    text-transform: uppercase;
-}
+        .about-label {
+            color: #6a6a6a; /* Grey color from mental health theme */
+            font-size: 0.92rem;
+            letter-spacing: 1.5px;
+            margin-bottom: 18px;
+            font-weight: 600;
+            display: block;
+            text-transform: uppercase;
+        }
 
-.about-title {
-    color: #18403c;
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 18px;
-    line-height: 1.1;
-}
+        .about-title {
+            color: #18403c; /* Dark teal/green from mental health theme */
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 18px;
+            line-height: 1.1;
+        }
 
-.about-desc {
-    color: #3a4a4a;
-    font-size: 1.08rem;
-    margin-bottom: 28px;
-}
+        .about-desc {
+            color: #3a4a4a; /* Dark grey/teal from mental health theme */
+            font-size: 1.08rem;
+            margin-bottom: 28px;
+        }
 
-.about-btn {
-    background: #07343d;
-    color: #fff;
-    border: none;
-    border-radius: 24px;
-    padding: 14px 32px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
+        .about-btn {
+            background: #07343d; /* Dark teal/green button background from mental health theme */
+            color: #fff;
+            border: none;
+            border-radius: 24px; /* Highly rounded button from mental health theme */
+            padding: 14px 32px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); /* Subtle shadow on button from mental health theme */
+        }
 
-.about-btn:hover {
-    background: #007b7b;
-}
+        .about-btn:hover {
+            background: #007b7b; /* Hover color from mental health theme */
+        }
 
-@media (max-width: 900px) {
-    .about-card {
-        flex-direction: column;
-        align-items: center;
-        padding: 32px 16px;
-        gap: 24px;
-        min-height: unset;
-    }
-    .about-illustration {
-        width: 100%;
-        justify-content: center;
-        margin-top: 18px;
-    }
-    .about-illustration img {
-        max-width: 220px;
-        border-radius: 24px;
-        padding: 18px;
-    }
-    .about-content {
-        max-width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-}
-
+        @media (max-width: 900px) {
+            .about-card {
+                flex-direction: column;
+                align-items: center;
+                padding: 32px 16px;
+                gap: 24px;
+                min-height: unset;
+            }
+            .about-illustration {
+                width: 100%;
+                justify-content: center;
+                margin-top: 18px;
+            }
+            .about-illustration img {
+                max-width: 220px;
+                border-radius: 24px;
+                padding: 18px;
+            }
+            .about-content {
+                max-width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+        }
 /* Modern Services Section Styles */
 .services-section {
     background: #fafaf8;
