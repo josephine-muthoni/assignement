@@ -213,146 +213,44 @@ body {
     color: #fff;
 }
 
-/* --- About Section Modern Card --- */
-.about-section {
-    background: #f8f9f7;
-    padding: 0; /* Remove extra vertical padding */
-    display: flex;
-    justify-content: center;
-    align-items: stretch; /* Stretch children to fill height */
-    min-height: 600px; /* Set desired minimum height for the section */
-}
+/* Custom styles for colors and fonts - updated for racing theme */
+        :root {
+            --primary-text-color: #0A1931; /* Dark blue for main text */
+            --secondary-text-color: #3B4B6C; /* Medium blue for description */
+            --button-bg-color: #FF5733; /* Bright orange/red for button */
+            --button-text-color: #fff;
+            --background-color-light: #F0F2F5; /* Light grey/blue background */
+            --image-section-bg: #ADD8E6; /* Light sky blue for image section background */
+        }
 
-.about-card {
-    display: flex;
-    align-items: stretch; /* Stretch content and illustration to fill height */
-    justify-content: space-between;
-    background: #fff;
-    border-radius: 36px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
-    padding: 56px 56px 56px 56px;
-    max-width: 1000px;
-    width: 100%;
-    margin: 40px auto; /* Add some vertical margin for separation */
-    gap: 48px;
-    min-height: 520px; /* Increase as needed */
-    height: 100%;
-}
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--primary-text-color);
+        }
 
-.about-content,
-.about-illustration {
-    flex: 1 1 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
+        h1 {
+            font-family: 'Playfair Display', serif; /* Keeping a bold font for headings */
+        }
 
-.about-content {
-    max-width: 420px;
-    text-align: left;
-    align-items: flex-start;
-}
+        /* Responsive adjustments for the image section background */
+        .image-section-bg {
+            /* Placeholder image for a racing car */
+            background-image: url('https://placehold.co/600x400/ADD8E6/0A1931?text=Racing+Car');
+            background-size: contain; /* Changed to 'contain' to ensure the entire image is visible */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
-.about-illustration img {
-    max-width: 340px;
-    width: 100%;
-    border-radius: 32px;
-    display: block;
-    background: #07343d;
-    object-fit: cover;
-    padding: 32px;
-    box-sizing: border-box;
-    height: 100%; /* Make the image fill the available height */
-    min-height: 200px;
-}
-
-.about-label {
-    color: #6a6a6a;
-    font-size: 0.92rem;
-    letter-spacing: 1.5px;
-    margin-bottom: 18px;
-    font-weight: 600;
-    display: block;
-    text-transform: uppercase;
-}
-
-.about-title {
-    color: #18403c;
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 18px;
-    line-height: 1.1;
-}
-
-.about-desc {
-    color: #3a4a4a;
-    font-size: 1.08rem;
-    margin-bottom: 28px;
-}
-
-.about-btn {
-    background: #07343d;
-    color: #fff;
-    border: none;
-    border-radius: 24px;
-    padding: 14px 32px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-.about-btn:hover {
-    background: #007b7b;
-}
-
-.about-illustration {
-    flex: 1 1 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.about-illustration img {
-    max-width: 340px;
-    width: 100%;
-    border-radius: 32px;
-    display: block;
-    background: #07343d;
-    object-fit: contain;
-    padding: 32px;
-    box-sizing: border-box;
-}
-
-@media (max-width: 900px) {
-    .about-card {
-        flex-direction: column;
-        align-items: center;
-        padding: 32px 16px;
-        gap: 24px;
-        min-height: unset;
-    }
-    .about-illustration {
-        width: 100%;
-        justify-content: center;
-        margin-top: 18px;
-    }
-    .about-illustration img {
-        max-width: 220px;
-        border-radius: 24px;
-        padding: 18px;
-    }
-    .about-content {
-        max-width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-}
-
+        /* Specific adjustments for smaller screens */
+        @media (max-width: 900px) {
+            .content-section-center-mobile {
+                text-align: center;
+            }
+            .description-center-mobile {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
 /* Modern Services Section Styles */
 .services-section {
     background: #fafaf8;
