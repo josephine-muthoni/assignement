@@ -1497,7 +1497,7 @@ body {
 /* --- Combined Footer Section --- */
 .combined-footer-section {
     width: 100%;
-    background: #222; /* or your footer bg */
+    background: orange; /* or your footer bg */
     padding: 0;
 }
 
