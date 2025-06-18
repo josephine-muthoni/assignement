@@ -813,7 +813,7 @@ body {
 .contact-subtitle {
     display: block;
     font-size: 14px;
-    color: #e10600; /* Racing red */
+    color: orange; /* Racing red */
     font-weight: 600;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -907,7 +907,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 30px;
-    color: #1a1a1a;
+    color:orange;
 }
 
 .contact-form-area form {
